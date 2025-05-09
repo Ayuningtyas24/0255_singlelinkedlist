@@ -39,7 +39,7 @@ void addNode()
         START = nodeBaru;
         return;
     }
-    
+
     Node *previous = START;
     Node *current = START;
 
@@ -58,4 +58,8 @@ void addNode()
     previous->next = nodeBaru;
 }
 
+bool listEmpty()
+{
+    return (START == NULL);
+}
 };
